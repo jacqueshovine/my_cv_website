@@ -1,0 +1,471 @@
+/* RED : #FF404C;
+BLACK : #2C3E50;
+GREY : #D7DADB;
+BLUE : #6DBCDB;
+DARK BLUE : #00708C;
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Roboto+Slab|Lato');
+
+.hidden{
+display:none;
+}
+
+div{
+box-sizing:border-box;
+}
+
+/* MATERIALIZE */
+
+.card-title{
+margin-bottom:30px;
+}
+
+/* label color */
+ .input-field label {
+   color: #00708C;
+ }
+ /* label focus color */
+ .input-field input[type=text]:focus + label, .input-field input[type=email]:focus + label, .input-field input[type=password]:focus + label, .input-field textarea.materialize-textarea:focus + label {
+   color: #00708C;
+ }
+ /* label underline focus color */
+ .input-field input[type=text]:focus, .input-field input[type=email]:focus, .input-field input[type=password]:focus, .input-field textarea.materialize-textarea:focus {
+   border-bottom: 1px solid #00708C;
+   box-shadow: 0 1px 0 0 #00708C;
+ }
+ /* valid color */
+ .input-field input[type=text].valid {
+   border-bottom: 1px solid #4caf50;
+   box-shadow: 0 1px 0 0 #4caf50;
+ }
+ /* invalid color */
+ .input-field input[type=text].invalid {
+   border-bottom: 1px solid #d32f2f;
+   box-shadow: 0 1px 0 0 #d32f2f;
+ }
+ /* icon prefix focus color */
+ .input-field .prefix.active {
+   color: #00708C;
+ }
+
+ /*disabled button */
+.btn.disabled, .disabled.btn-large, .btn-floating.disabled, .btn-large.disabled, .btn-flat.disabled, .btn:disabled, .btn-large:disabled, .btn-floating:disabled, .btn-large:disabled, .btn-flat:disabled, .btn[disabled], [disabled].btn-large, .btn-floating[disabled], .btn-large[disabled], .btn-flat[disabled]{
+color:white !important;
+background-color:#2C3E50 !important;
+}
+
+/* HEIGHT WIDTH */
+
+.h100{
+height: 100%;
+}
+
+.w100{
+width: 100%;
+}
+
+/* MARGIN PADDING */
+
+.pad-5{
+padding: 5px;
+}
+
+.pad-10{
+padding: 10px;
+}
+
+.marg-10{
+margin: 10px;
+}
+
+.marg-10-ver{
+margin:10px 0;
+}
+
+.marg-20{
+margin:20px;
+}
+
+.marg-20-ver{
+margin:20px 0;
+}
+
+.pad-20{
+padding: 20px;
+}
+
+/* FLEX */
+.flex {
+display: flex;
+}
+
+.flex-row-rev{
+display: flex;
+flex-direction: row-reverse;
+}
+
+.flex-row{
+display: flex;
+flex-direction: row;
+}
+
+.flex-col {
+display: flex;
+flex-direction: column;
+}
+
+.flex-wrap {
+flex-wrap: wrap;
+}
+
+.flex-c-c {
+justify-content: center;
+align-items: center;
+}
+
+.flex-sb {
+justify-content: space-between;
+}
+
+.flex-sa {
+justify-content: space-around;
+}
+
+.flex-align{
+align-items: center;	
+}
+
+.text-c{
+text-align:center;
+}
+
+.text-j{
+text-align:justify;
+}
+
+/* RESPONSIVE */
+
+.l12{
+width: calc(100% - 20px);
+}
+
+.l9{
+width: calc(75% - 20px);
+}
+
+.l8{
+width: calc(100% - (100%/3) - 20px);
+}
+
+.l6{
+width: calc(50% - 20px);
+}
+
+.l4{
+width: calc(100%/3 - 20px);
+}
+
+.l3{
+width: calc(25% - 20px);
+}
+
+body{
+font-family:"Roboto";
+line-height: 120%;
+background-color:#D7DADB;
+}
+
+h1, h2{
+font-family: "Lato";
+}
+
+h1, h2, h3, h4, h5, h6{
+margin: 10px 0;
+}
+
+h1{
+font-size:2em;
+}
+
+h2{
+font-size:2em;
+}
+
+h3{
+font-size:1.3em;
+}
+
+h4{
+font-size:1.1em;
+font-style:italic;
+}
+
+p{
+margin:10px 0;
+}
+
+a{
+color:#00708C;
+}
+
+/* NAV */
+
+nav{
+position:fixed;
+top:0;
+left:0;
+z-index:999;
+background-color:#2C3E50;
+}
+
+nav i{
+display:initial;
+}
+
+/* FOOTER */
+
+footer{
+background-color:#2C3E50;
+}
+
+
+/* MAIN */
+
+#lang{
+margin:0;
+position:absolute;
+top:0;
+right:0;
+}
+
+#lang img{
+height: 64px !important;
+width: 64px !important;
+}
+
+#lang img:hover{
+animation:pulse;
+animation-duration:1s;
+}
+
+main{
+min-height: 100vh;
+width: 75%;
+margin-top:64px;
+}
+
+.cv_entete{
+margin:10px 0;
+}
+
+.cv_entete > h3, .cv_entete > h4{
+margin: 0;
+}
+
+.cv_entete ul, .cv_details ul{
+padding-left:20px;
+}
+
+.cv_entete li, .cv_details li{
+list-style-type:disc !important;
+}
+
+/* PRESENTATION */
+
+#presentation{
+position:relative;
+}
+
+#presentation img{
+height: 300px;
+width: 300px;
+border-radius:50%;
+}
+
+#likeButton{
+align-self:center;
+margin-top:20px;
+background-color:#6DBCDB;
+}
+
+
+/* EXPERIENCES */
+
+#experiences > div:first-child{
+padding:10px;
+color:white;
+font-size:1.5em;
+line-height: 	120%;
+margin-bottom:20px;
+}
+
+#experiences > div:nth-child(2) > div:first-child{
+animation:slideInLeft;
+animation-duration:2s;
+}
+
+#experiences > div:nth-child(2) > div:nth-child(2){
+animation:slideInRight;
+animation-duration:2s;
+}
+
+.titrexp{
+font-weight: bold;
+}
+
+#experiences .chip{
+background-color:#6DBCDB;
+}
+
+/* PROJETS */
+
+/* CONTACT */
+
+#infoperso > *{
+padding:5px 0;
+}
+
+#infoperso i{
+padding:3px;
+}
+
+label::after{
+color:red !important;
+}
+
+/* FOOTER */
+
+footer{
+width:100%;
+}
+
+/* DESKTOP ONLY */
+@media screen and (min-width:1024px){
+	section{
+	margin:20px 0;
+	}
+
+	.nav-wrapper{
+	padding-left:15px;
+	overflow:hidden;
+	}
+
+	#presentation > div > div:first-child{
+	margin-right:90px;
+	}
+
+	.card-panel > span:first-child i{
+		font-size:3em;
+  }
+  
+  /* Scroll sur les xp pro */
+  #xp_pro{
+    overflow-y:scroll;
+    height:512px;
+  }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #D7DADB; 
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+}
+
+/* GRAND ECRAN */
+
+@media screen and (min-width:1440px){
+	main{
+		width:65%;
+	}
+}
+
+/* PETIT ECRAN DESKTOP */
+@media screen and (max-width:1280px){
+	main{
+		width:90%;
+	}
+}
+
+
+/* TABLETTE */
+
+@media screen and (max-width:1024px){
+
+	main{
+		width: 75%;
+	}
+
+	.flex, .flex-row-rev{
+	flex-direction: column;
+	}
+
+	#contact > div + div, #experiences > div:nth-child(2) > div:nth-child(2){
+	flex-direction: row;
+	}
+
+	.m12{
+	width: calc(100% - 20px);
+	}
+
+	.m8{
+	width: calc(100% - (100%/3) - 20px);
+	}
+
+	.m6{
+	width: calc(50% - 20px);
+	}
+
+	.m4{
+	width: calc(100%/3 - 20px);
+	}
+
+	.m3{
+	width: calc(25% - 20px);
+	}
+
+	#projets > div + div{
+	flex-direction: row; /* Vient contredire la règle des row qui passent en column en tablette et mobile */
+	}
+
+	#presentation > div + div{
+	margin-top:55px;
+	}
+}
+
+/* MOBILE */
+
+@media screen and (max-width:600px){
+
+	main{
+	width:85%;
+	margin-top:56px;
+	}
+
+	.flex, .flex-row-rev, #contact > div + div,#experiences > div:nth-child(2) > div:nth-child(2){
+	flex-direction: column;
+	}
+
+	.s6{
+	width: 50%;
+	}
+
+	.s12{
+	width: 100%;
+	}
+
+}
